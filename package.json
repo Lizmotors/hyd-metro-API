@@ -1,0 +1,19 @@
+{
+  "name": "delhimetroapi",
+  "description": "API to get Delhi Metro Routes",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Ankit Kumar Verma",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "index.js"
+  },
+  "dependencies": {
+    "request": "2.88.0",
+    "express": "4.17.1 "
+  }
+}
