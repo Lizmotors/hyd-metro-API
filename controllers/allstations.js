@@ -1,13 +1,13 @@
-var express = require('express');
+var express = require("express");
 
-const router = express.Router()
-const stations = require("../station.json")
-
+const router = express.Router();
+const stations = require("../station.json");
 
 router.get("/", (req, res) => {
-    res.status(200).json({
-        stations: stations
-    })
-})
+  res.status(200).json({
+    stations: stations,
+    len: stations.length,
+  });
+});
 
-module.exports = router
+module.exports = router;
