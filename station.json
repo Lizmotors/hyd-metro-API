@@ -1,173 +1,542 @@
 [
     {
-        "value":"Nagole"
+      "id": "HRM1",
+      "station_name": "L B Nagar",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.35026677,
+      "station_longitude": 78.54796475,
+      "waypoints": ""
     },
     {
-        "value":"Uppal"
+      "id": "HRM2",
+      "station_name": "Victoria Memorial",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.36193211,
+      "station_longitude": 78.54408684,
+      "waypoints": ""
     },
     {
-        "value":"Stadium"
+      "id": "HRM3",
+      "station_name": "Chaitanyapuri",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.36835912,
+      "station_longitude": 78.53599642,
+      "waypoints": ""
     },
     {
-        "value":"NGRI"
+      "id": "HRM4",
+      "station_name": "Dilsukhnagar",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.36856688,
+      "station_longitude": 78.52569646,
+      "waypoints": ""
     },
     {
-        "value":"Habsiguda"
+      "id": "HRM5",
+      "station_name": "Musarambagh",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.37107432,
+      "station_longitude": 78.51192528,
+      "waypoints": ""
     },
     {
-        "value":"Tarnaka"
+      "id": "HRM6",
+      "station_name": "New Market",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.37354054,
+      "station_longitude": 78.50295936,
+      "waypoints": ""
     },
     {
-        "value":"Mettuguda"
+      "id": "HRM7",
+      "station_name": "Malakpet",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.37730367,
+      "station_longitude": 78.49385141,
+      "waypoints": ""
     },
     {
-        "value":"Secunderabad East"
+      "id": "HRM8",
+      "station_name": "MG Bus station",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.37987391,
+      "station_longitude": 78.48627249,
+      "waypoints": ""
     },
     {
-        "value":"Parade Grounds"
+      "id": "HRM9",
+      "station_name": "Osmania Medical College",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.38233548,
+      "station_longitude": 78.4810398,
+      "waypoints": ""
     },
     {
-        "value":"Paradise"
+      "id": "HRM10",
+      "station_name": "Gandhi Bhavan",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.38608893,
+      "station_longitude": 78.47312381,
+      "waypoints": ""
     },
     {
-        "value":"Rasool Pura"
+      "id": "HRM11",
+      "station_name": "Nampally",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.39185266,
+      "station_longitude": 78.47022408,
+      "waypoints": ""
     },
     {
-        "value":"Prakash Nagar"
+      "id": "HRM12",
+      "station_name": "Assembly",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.39809876,
+      "station_longitude": 78.47075226,
+      "waypoints": ""
     },
     {
-        "value":"Begumpet"
+      "id": "HRM13",
+      "station_name": "Lakdikapul",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.40393917,
+      "station_longitude": 78.46501529,
+      "waypoints": ""
     },
     {
-        "value":"Ameerpet"
+      "id": "HRM14",
+      "station_name": "Khairatabad",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.41160467,
+      "station_longitude": 78.46079287,
+      "waypoints": ""
     },
     {
-        "value":"Madhura Nagar"
+      "id": "HRM15",
+      "station_name": "Irrum Manzil",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.42050873,
+      "station_longitude": 78.45601806,
+      "waypoints": ""
     },
     {
-        "value":"Yusuf Guda"
+      "id": "HRM16",
+      "station_name": "Punjagutta",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.42891614,
+      "station_longitude": 78.45105086,
+      "waypoints": ""
     },
     {
-        "value":"Jubilee Hills Road No 5"
+      "id": "HRM17",
+      "station_name": "Ameerpet",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.43570427,
+      "station_longitude": 78.44459848,
+      "waypoints": ""
     },
     {
-        "value":"Jubilee Hills Check Post"
+      "id": "HRM18",
+      "station_name": "S R Nagar",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.44164868,
+      "station_longitude": 78.44163537,
+      "waypoints": ""
     },
     {
-        "value":"Pedamma Temple"
+      "id": "HRM19",
+      "station_name": "ESI Hospital",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.44737026,
+      "station_longitude": 78.43833849,
+      "waypoints": ""
     },
     {
-        "value":"Madhapur"
+      "id": "HRM20",
+      "station_name": "Erragadda Road",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.45722337,
+      "station_longitude": 78.43352089,
+      "waypoints": ""
     },
     {
-        "value":"Durgam Chervu"
+      "id": "HRM21",
+      "station_name": "Bharat Nagar",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.4640518,
+      "station_longitude": 78.43003958,
+      "waypoints": ""
     },
     {
-        "value":"HITEC City"
+      "id": "HRM22",
+      "station_name": "Moosapet",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.47206278,
+      "station_longitude": 78.42604395,
+      "waypoints": ""
     },
     {
-        "value":"Raidurg"
+      "id": "HRM23",
+      "station_name": "Balanagar",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.47683185,
+      "station_longitude": 78.42211747,
+      "waypoints": ""
     },
     {
-        "value":"JBS"
+      "id": "HRM24",
+      "station_name": "Kukatpally",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.48511645,
+      "station_longitude": 78.41155941,
+      "waypoints": ""
     },
     {
-        "value":"Secunderabad West"
+      "id": "HRM25",
+      "station_name": "KPHB Colony",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.49357144,
+      "station_longitude": 78.40153291,
+      "waypoints": ""
     },
     {
-        "value":"Gandhi Hospital"
+      "id": "HRM26",
+      "station_name": "JNTU College",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.49870034,
+      "station_longitude": 78.38881341,
+      "waypoints": ""
     },
     {
-        "value":"Musheerabad"
+      "id": "HRM27",
+      "station_name": "Miyapur",
+      "line": "red",
+      "layout": "elevated",
+      "station_latitude": 17.49646106,
+      "station_longitude": 78.37294669,
+      "waypoints": ""
     },
     {
-        "value":"RTC Cross Roads"
+      "id": "HBM1",
+      "station_name": "Nagole",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.39086326,
+      "station_longitude": 78.55884027,
+      "waypoints": ""
     },
     {
-        "value":"Chikkadpally"
+      "id": "HBM2",
+      "station_name": "Uppal",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.4002416,
+      "station_longitude": 78.56027855,
+      "waypoints": ""
     },
     {
-        "value":"Narayanguda"
+      "id": "HBM3",
+      "station_name": "Stadium",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.40740633,
+      "station_longitude": 78.55422389,
+      "waypoints": ""
     },
     {
-        "value":"Sultan Bazar"
+      "id": "HBM4",
+      "station_name": "NGRI",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.41471014,
+      "station_longitude": 78.54651001,
+      "waypoints": ""
     },
     {
-        "value":"M G Bus Station"
+      "id": "HBM5",
+      "station_name": "Habsiguda",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.42021528,
+      "station_longitude": 78.5405236,
+      "waypoints": ""
     },
     {
-        "value":"L B Nagar"
+      "id": "HBM6",
+      "station_name": "Tarnaka",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.42830263,
+      "station_longitude": 78.52856383,
+      "waypoints": ""
     },
     {
-        "value":"Victoria Memorial"
+      "id": "HBM7",
+      "station_name": "Mettuguda",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43546831,
+      "station_longitude": 78.51975231,
+      "waypoints": ""
     },
     {
-        "value":"Chaitanyapuri"
+      "id": "HBM8",
+      "station_name": "Secunderabad East",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43619246,
+      "station_longitude": 78.50531771,
+      "waypoints": ""
     },
     {
-        "value":"Dilsukhnagar"
+      "id": "HBM9",
+      "station_name": "Parade Grounds",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44312125,
+      "station_longitude": 78.49738006,
+      "waypoints": ""
     },
     {
-        "value":"Musarambagh"
+      "id": "HBM10",
+      "station_name": "Paradise",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44348224,
+      "station_longitude": 78.48619359,
+      "waypoints": ""
     },
     {
-        "value":"New Market"
+      "id": "HBM11",
+      "station_name": "Rasool Pura",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44359458,
+      "station_longitude": 78.47635841,
+      "waypoints": ""
     },
     {
-        "value":"Malakpet"
+      "id": "HBM12",
+      "station_name": "Prakash Nagar",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44494504,
+      "station_longitude": 78.46598047,
+      "waypoints": ""
     },
     {
-        "value":"Osmania Medical College"
+      "id": "HBM13",
+      "station_name": "Begumpet",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.4375748,
+      "station_longitude": 78.45698077,
+      "waypoints": ""
     },
     {
-        "value":"Gandhi Bhavan"
+      "id": "HBM14",
+      "station_name": "Ameerpet",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43577643,
+      "station_longitude": 78.44458293,
+      "waypoints": ""
     },
     {
-        "value":"Nampally"
+      "id": "HBM15",
+      "station_name": "Madhura Nagar",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.4368957,
+      "station_longitude": 78.43895256,
+      "waypoints": ""
     },
     {
-        "value":"Assembly"
+      "id": "HBM16",
+      "station_name": "Yusuf Guda",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43565647,
+      "station_longitude": 78.42770727,
+      "waypoints": ""
     },
     {
-        "value":"Lakdikapul"
+      "id": "HBM17",
+      "station_name": "Jubilee Hills Road No 5",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43031585,
+      "station_longitude": 78.423013,
+      "waypoints": ""
     },
     {
-        "value":"Khairatabad"
+      "id": "HBM18",
+      "station_name": "Jubilee Hills Check Post",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.42825044,
+      "station_longitude": 78.41368448,
+      "waypoints": ""
     },
     {
-        "value":"Irrum Manzil"
+      "id": "HBM19",
+      "station_name": "Pedamma Temple",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43050082,
+      "station_longitude": 78.40866315,
+      "waypoints": ""
     },
     {
-        "value":"Punjagutta"
+      "id": "HBM20",
+      "station_name": "Madhapur",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.43678773,
+      "station_longitude": 78.40075668,
+      "waypoints": ""
     },
     {
-        "value":"S R Nagar"
+      "id": "HBM21",
+      "station_name": "Durgam Chervu",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44287749,
+      "station_longitude": 78.38764927,
+      "waypoints": ""
     },
     {
-        "value":"ESI Hospital"
+      "id": "HBM22",
+      "station_name": "HITEC City",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.4489237,
+      "station_longitude": 78.3831926,
+      "waypoints": ""
     },
     {
-        "value":"Erragadda"
+      "id": "HBM23",
+      "station_name": "Raidurg",
+      "line": "blue",
+      "layout": "elevated",
+      "station_latitude": 17.44195976,
+      "station_longitude": 78.37723641,
+      "waypoints": ""
     },
     {
-        "value":"Bharat Nagar"
+      "id": "HGM1",
+      "station_name": "JBS",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.44445944,
+      "station_longitude": 78.49746063,
+      "waypoints": ""
     },
     {
-        "value":"Moosapet"
+      "id": "HGM2",
+      "station_name": "Parade Grounds",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.44314549,
+      "station_longitude": 78.49751684,
+      "waypoints": ""
     },
     {
-        "value":"Balanagar"
+      "id": "HGM3",
+      "station_name": "Secunderabad West",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.43371525,
+      "station_longitude": 78.49921372,
+      "waypoints": ""
     },
     {
-        "value":"Kukatpally"
+      "id": "HGM4",
+      "station_name": "Gandhi Hospital",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.4255943,
+      "station_longitude": 78.5018932,
+      "waypoints": ""
     },
     {
-        "value":"KPHB Colony"
+      "id": "HGM5",
+      "station_name": "Musheerabad",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.41781399,
+      "station_longitude": 78.49936109,
+      "waypoints": ""
     },
     {
-        "value":"JNTU College"
+      "id": "HGM6",
+      "station_name": "RTC Cross Roads",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.40766316,
+      "station_longitude": 78.4970759,
+      "waypoints": ""
     },
     {
-        "value":"Miyapur"
+      "id": "HGM7",
+      "station_name": "Chikkadpally",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.40077328,
+      "station_longitude": 78.49492676,
+      "waypoints": ""
+    },
+    {
+      "id": "HGM8",
+      "station_name": "Narayanguda",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.39422753,
+      "station_longitude": 78.48986199,
+      "waypoints": ""
+    },
+    {
+      "id": "HGM9",
+      "station_name": "Sultan Bazar",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.38417328,
+      "station_longitude": 78.48363074,
+      "waypoints": ""
+    },
+    {
+      "id": "HGM10",
+      "station_name": "M G Bus Station",
+      "line": "green",
+      "layout": "elevated",
+      "station_latitude": 17.37999562,
+      "station_longitude": 78.48574318,
+      "waypoints": ""
     }
-]
+  ]

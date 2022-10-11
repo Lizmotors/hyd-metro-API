@@ -11,6 +11,125 @@ let v;
 let adjList;
 let resultData = [];
 
+let links = [
+  ["Nagole", "Uppal", 1, 120],
+  ["Uppal", "Stadium", 1, 120],
+  ["Stadium", "NGRI", 1.2, 60],
+  ["NGRI", "Habsiguda", 0.8, 120],
+  ["Habsiguda", "Tarnaka", 1.4, 120],
+  ["Tarnaka", "Mettuguda", 1.4, 120],
+  ["Mettuguda", "Secunderabad East", 1.8, 180],
+  ["Secunderabad East", "Parade Grounds", 1.6, 120],
+  ["Parade Grounds", "Paradise", 1.2, 120],
+  ["Paradise", "Rasool Pura", 1, 120],
+  ["Rasool Pura", "Prakash Nagar", 1.1, 60],
+  ["Prakash Nagar", "Begumpet", 1.4, 180],
+  ["Begumpet", "Ameerpet", 1.5, 180],
+  ["Ameerpet", "Madhura Nagar", 0.7, 120],
+  ["Madhura Nagar", "Yusuf Guda", 1.4, 120],
+  ["Yusuf Guda", "Jubilee Hills Road No 5", 0.8, 120],
+  ["Jubilee Hills Road No 5", "Jubilee Hills Check Post", 1.2, 120],
+  ["Jubilee Hills Check Post", "Pedamma Temple", 0.6, 120],
+  ["Pedamma Temple", "Madhapur", 1.2, 120],
+  ["Madhapur", "Durgam Chervu", 1.6, 120],
+  ["Durgam Chervu", "HITEC City", 0.8, 120],
+  ["HITEC City", "Raidurg", 1.5, 180],
+  ["Uppal", "Nagole", 1, 120],
+  ["Stadium", "Uppal", 1, 120],
+  ["NGRI", "Stadium", 1.2, 60],
+  ["Habsiguda", "NGRI", 0.8, 120],
+  ["Tarnaka", "Habsiguda", 1.4, 120],
+  ["Mettuguda", "Tarnaka", 1.4, 120],
+  ["Secunderabad East", "Mettuguda", 1.8, 180],
+  ["Parade Grounds", "Secunderabad East", 1.6, 120],
+  ["Paradise", "Parade Grounds", 1.2, 120],
+  ["Rasool Pura", "Paradise", 1, 120],
+  ["Prakash Nagar", "Rasool Pura", 1.1, 60],
+  ["Begumpet", "Prakash Nagar", 1.4, 180],
+  ["Ameerpet", "Begumpet", 1.5, 180],
+  ["Madhura Nagar", "Ameerpet", 0.7, 120],
+  ["Yusuf Guda", "Madhura Nagar", 1.4, 120],
+  ["Jubilee Hills Road No 5", "Yusuf Guda", 0.8, 120],
+  ["Jubilee Hills Check Post", "Jubilee Hills Road No 5", 1.2, 120],
+  ["Pedamma Temple", "Jubilee Hills Check Post", 0.6, 120],
+  ["Madhapur", "Pedamma Temple", 1.2, 120],
+  ["Durgam Chervu", "Madhapur", 1.6, 120],
+  ["HITEC City", "Durgam Chervu", 0.8, 120],
+  ["Raidurg", "HITEC City", 1.5, 180],
+  ["L B Nagar", "Victoria Memorial", 1.4, 120],
+  ["Victoria Memorial", "Chaitanyapuri", 1, 120],
+  ["Chaitanyapuri", "Dilsukhnagar", 1.4, 120],
+  ["Dilsukhnagar", "Musarambagh", 1.5, 120],
+  ["Musarambagh", "New Market", 1, 60],
+  ["New Market", "Malakpet", 1.1, 120],
+  ["Malakpet", "M G Bus station", 1, 120],
+  ["M G Bus station", "Osmania Medical College", 0.6, 120],
+  ["Osmania Medical College", "Gandhi Bhavan", 1, 60],
+  ["Gandhi Bhavan", "Nampally", 0.8, 120],
+  ["Nampally", "Assembly", 0.7, 60],
+  ["Assembly", "Lakdikapul", 1, 120],
+  ["Lakdikapul", "Khairatabad", 1, 120],
+  ["Khairatabad", "Irrum Manzil", 1, 120],
+  ["Irrum Manzil", "Punjagutta", 1.1, 120],
+  ["Punjagutta", "Ameerpet", 1, 120],
+  ["Ameerpet", "S R Nagar", 1, 60],
+  ["S R Nagar", "ESI Hospital", 0.7, 60],
+  ["ESI Hospital", "Erragadda Road", 1, 120],
+  ["Erragadda Road", "Bharat Nagar", 0.7, 120],
+  ["Bharat Nagar", "Moosapet", 1.1, 120],
+  ["Moosapet", "Balanagar", 0.7, 60],
+  ["Balanagar", "Kukatpally", 1.4, 120],
+  ["Kukatpally", "KPHB Colony", 1.4, 120],
+  ["KPHB Colony", "JNTU College", 1.5, 120],
+  ["JNTU College", "Miyapur", 1.7, 120],
+  ["Victoria Memorial", "L B Nagar", 1.4, 120],
+  ["Chaitanyapuri", "Victoria Memorial", 1, 120],
+  ["Dilsukhnagar", "Chaitanyapuri", 1.4, 120],
+  ["Musarambagh", "Dilsukhnagar", 1.5, 120],
+  ["New Market", "Musarambagh", 1, 60],
+  ["Malakpet", "New Market", 1.1, 120],
+  ["M G Bus station", "Malakpet", 1, 120],
+  ["Osmania Medical College", "M G Bus station", 0.6, 120],
+  ["Gandhi Bhavan", "Osmania Medical College", 1, 60],
+  ["Nampally", "Gandhi Bhavan", 0.8, 120],
+  ["Assembly", "Nampally", 0.7, 60],
+  ["Lakdikapul", "Assembly", 1, 120],
+  ["Khairatabad", "Lakdikapul", 1, 120],
+  ["Irrum Manzil", "Khairatabad", 1, 120],
+  ["Punjagutta", "Irrum Manzil", 1.1, 120],
+  ["Ameerpet", "Punjagutta", 1, 120],
+  ["S R Nagar", "Ameerpet", 1, 60],
+  ["ESI Hospital", "S R Nagar", 0.7, 60],
+  ["Erragadda Road", "ESI Hospital", 1, 120],
+  ["Bharat Nagar", "Erragadda Road", 0.7, 120],
+  ["Moosapet", "Bharat Nagar", 1.1, 120],
+  ["Balanagar", "Moosapet", 0.7, 60],
+  ["Kukatpally", "Balanagar", 1.4, 120],
+  ["KPHB Colony", "Kukatpally", 1.4, 120],
+  ["JNTU College", "KPHB Colony", 1.5, 120],
+  ["Miyapur", "JNTU College", 1.7, 120],
+  ["JBS", "Parade Grounds", 1, 120],
+  ["Parade Grounds", "Secunderabad West", 1, 120],
+  ["Secunderabad West", "Gandhi Hospital", 1.3, 180],
+  ["Gandhi Hospital", "Musheerabad", 1, 60],
+  ["Musheerabad", "RTC Cross Roads", 1.3, 120],
+  ["RTC Cross Roads", "Chikkadpally", 0.8, 60],
+  ["Chikkadpally", "Narayanguda", 0.9, 120],
+  ["Narayanguda", "Sultan Bazar", 1.3, 120],
+  ["Sultan Bazar", "M G Bus station", 0.7, 60],
+  ["Parade Grounds", "JBS", 1, 120],
+  ["Secunderabad West", "Parade Grounds", 1, 120],
+  ["Gandhi Hospital", "Secunderabad West", 1.3, 180],
+  ["Musheerabad", "Gandhi Hospital", 1, 60],
+  ["RTC Cross Roads", "Musheerabad", 1.3, 120],
+  ["Chikkadpally", "RTC Cross Roads", 0.8, 60],
+  ["Narayanguda", "Chikkadpally", 0.9, 120],
+  ["Sultan Bazar", "Narayanguda", 1.3, 120],
+  ["M G Bus station", "Sultan Bazar", 0.7, 60],
+];
+
+const stations = require("../station.json");
+
 // A directed graph using
 // adjacency list representation
 function Graph(vertices) {
@@ -57,16 +176,44 @@ function printAllPaths(s, d, dict) {
 // vertices in current path.
 // localPathList<> stores actual
 // vertices in the current path
+function findDistance(distanceData) {
+  let distance = 0;
+  let time = 0;
+  for (let i = 0; i < distanceData.length - 1; i++) {
+    const val1 = distanceData[i];
+    const val2 = distanceData[i + 1];
+    const findData = links.find((ele) => ele[0] === val1 && ele[1] === val2);
+    //console.log("find", findData);
+    if (findData && findData.length > 0) {
+      distance += findData[2];
+      time += findData[3];
+    }
+  }
+  return { distance: distance + " kms", time: time + " secs" };
+}
+
 function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
   if (u == d) {
     let localData = [];
     for (let t = 0; t < localPathList.length; t++) {
       const data = localPathList[t];
       const keyData = Object.keys(dict).find((key) => dict[key] === data);
-
       localData.push(keyData);
     }
-    resultData.push({ [`route ${resultData.length + 1}`]: [...localData] });
+    const timeData = findDistance([...localData]);
+
+    const formatData = localData.map((ele) => {
+      const findData = stations.find((item) => item.station_name === ele);
+      //console.log("findData", findData, ele);
+      return { ...findData };
+    });
+    let lines = formatData.map((ele) => ele.line);
+    resultData.push({
+      [`route ${resultData.length + 1}`]: [...formatData],
+      ...timeData,
+      lines: [...new Set(lines)],
+      totalStations: formatData.length,
+    });
     // if match found then no need to
     // traverse more till depth
     return;
@@ -96,122 +243,6 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
 
 // Driver program
 // Create a sample graph
-let links = [
-  ["Nagole", "Uppal", 10],
-  ["Uppal", "Stadium", 10],
-  ["Stadium", "NGRI", 12],
-  ["NGRI", "Habsiguda", 8],
-  ["Habsiguda", "Tarnaka", 14],
-  ["Tarnaka", "Mettuguda", 14],
-  ["Mettuguda", "Secunderabad East", 18],
-  ["Secunderabad East", "Parade Grounds", 16],
-  ["Parade Grounds", "Paradise", 12],
-  ["Paradise", "Rasool Pura", 10],
-  ["Rasool Pura", "Prakash Nagar", 11],
-  ["Prakash Nagar", "Begumpet", 14],
-  ["Begumpet", "Ameerpet", 15],
-  ["Ameerpet", "Madhura Nagar", 7],
-  ["Madhura Nagar", "Yusuf Guda", 14],
-  ["Yusuf Guda", "Jubilee Hills Road No 5", 8],
-  ["Jubilee Hills Road No 5", "Jubilee Hills Check Post", 12],
-  ["Jubilee Hills Check Post", "Pedamma Temple", 6],
-  ["Pedamma Temple", "Madhapur", 12],
-  ["Madhapur", "Durgam Chervu", 16],
-  ["Durgam Chervu", "HITEC City", 8],
-  ["HITEC City", "Raidurg", 15],
-  ["Uppal", "Nagole", 10],
-  ["Stadium", "Uppal", 10],
-  ["NGRI", "Stadium", 12],
-  ["Habsiguda", "NGRI", 8],
-  ["Tarnaka", "Habsiguda", 14],
-  ["Mettuguda", "Tarnaka", 14],
-  ["Secunderabad East", "Mettuguda", 18],
-  ["Parade Grounds", "Secunderabad East", 16],
-  ["Paradise", "Parade Grounds", 12],
-  ["Rasool Pura", "Paradise", 10],
-  ["Prakash Nagar", "Rasool Pura", 11],
-  ["Begumpet", "Prakash Nagar", 14],
-  ["Ameerpet", "Begumpet", 15],
-  ["Madhura Nagar", "Ameerpet", 7],
-  ["Yusuf Guda", "Madhura Nagar", 14],
-  ["Jubilee Hills Road No 5", "Yusuf Guda", 8],
-  ["Jubilee Hills Check Post", "Jubilee Hills Road No 5", 12],
-  ["Pedamma Temple", "Jubilee Hills Check Post", 6],
-  ["Madhapur", "Pedamma Temple", 12],
-  ["Durgam Chervu", "Madhapur", 16],
-  ["HITEC City", "Durgam Chervu", 8],
-  ["Raidurg", "HITEC City", 15],
-  ["L B Nagar", "Victoria Memorial", 14],
-  ["Victoria Memorial", "Chaitanyapuri", 10],
-  ["Chaitanyapuri", "Dilsukhnagar", 14],
-  ["Dilsukhnagar", "Musarambagh", 15],
-  ["Musarambagh", "New Market", 10],
-  ["New Market", "Malakpet", 11],
-  ["Malakpet", "M G Bus station", 10],
-  ["M G Bus station", "Osmania Medical College", 6],
-  ["Osmania Medical College", "Gandhi Bhavan", 10],
-  ["Gandhi Bhavan", "Nampally", 8],
-  ["Nampally", "Assembly", 7],
-  ["Assembly", "Lakdikapul", 10],
-  ["Lakdikapul", "Khairatabad", 10],
-  ["Khairatabad", "Irrum Manzil", 10],
-  ["Irrum Manzil", "Punjagutta", 11],
-  ["Punjagutta", "Ameerpet", 10],
-  ["Ameerpet", "S R Nagar", 10],
-  ["S R Nagar", "ESI Hospital", 7],
-  ["ESI Hospital", "Erragadda Road", 10],
-  ["Erragadda Road", "Bharat Nagar", 7],
-  ["Bharat Nagar", "Moosapet", 11],
-  ["Moosapet", "Balanagar", 7],
-  ["Balanagar", "Kukatpally", 14],
-  ["Kukatpally", "KPHB Colony", 14],
-  ["KPHB Colony", "JNTU College", 15],
-  ["JNTU College", "Miyapur", 17],
-  ["Victoria Memorial", "L B Nagar", 14],
-  ["Chaitanyapuri", "Victoria Memorial", 10],
-  ["Dilsukhnagar", "Chaitanyapuri", 14],
-  ["Musarambagh", "Dilsukhnagar", 15],
-  ["New Market", "Musarambagh", 10],
-  ["Malakpet", "New Market", 11],
-  ["M G Bus station", "Malakpet", 10],
-  ["Osmania Medical College", "M G Bus station", 6],
-  ["Gandhi Bhavan", "Osmania Medical College", 10],
-  ["Nampally", "Gandhi Bhavan", 8],
-  ["Assembly", "Nampally", 7],
-  ["Lakdikapul", "Assembly", 10],
-  ["Khairatabad", "Lakdikapul", 10],
-  ["Irrum Manzil", "Khairatabad", 10],
-  ["Punjagutta", "Irrum Manzil", 11],
-  ["Ameerpet", "Punjagutta", 10],
-  ["S R Nagar", "Ameerpet", 10],
-  ["ESI Hospital", "S R Nagar", 7],
-  ["Erragadda Road", "ESI Hospital", 10],
-  ["Bharat Nagar", "Erragadda Road", 7],
-  ["Moosapet", "Bharat Nagar", 11],
-  ["Balanagar", "Moosapet", 7],
-  ["Kukatpally", "Balanagar", 14],
-  ["KPHB Colony", "Kukatpally", 14],
-  ["JNTU College", "KPHB Colony", 15],
-  ["Miyapur", "JNTU College", 17],
-  ["JBS", "Parade Grounds", 5],
-  ["Parade Grounds", "Secunderabad West", 13],
-  ["Secunderabad West", "Gandhi Hospital", 13],
-  ["Gandhi Hospital", "Musheerabad", 10],
-  ["Musheerabad", "RTC Cross Roads", 13],
-  ["RTC Cross Roads", "Chikkadpally", 8],
-  ["Chikkadpally", "Narayanguda", 9],
-  ["Narayanguda", "Sultan Bazar", 13],
-  ["Sultan Bazar", "M G Bus station", 7],
-  ["Parade Grounds", "JBS", 5],
-  ["Secunderabad West", "Parade Grounds", 13],
-  ["Gandhi Hospital", "Secunderabad West", 13],
-  ["Musheerabad", "Gandhi Hospital", 10],
-  ["RTC Cross Roads", "Musheerabad", 13],
-  ["Chikkadpally", "RTC Cross Roads", 8],
-  ["Narayanguda", "Chikkadpally", 9],
-  ["Sultan Bazar", "Narayanguda", 13],
-  ["M G Bus station", "Sultan Bazar", 7],
-];
 
 let arr = [];
 for (let i = 0; i < links.length; i++) {
