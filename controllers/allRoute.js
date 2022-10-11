@@ -189,7 +189,12 @@ function findDistance(distanceData) {
       time += findData[3];
     }
   }
-  return { distance: distance + " kms", time: time + " secs" };
+  return {
+    miles: distance,
+    time_for_journey: time + " secs",
+    tokens_earned: Math.round(distance / 4),
+    co2_saved: Math.round(distance / 4),
+  };
 }
 
 function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
@@ -213,6 +218,7 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
       ...timeData,
       lines: [...new Set(lines)],
       totalStations: formatData.length,
+      token: "token",
     });
     // if match found then no need to
     // traverse more till depth
@@ -284,7 +290,12 @@ router.get("/:from/:to", (req, res) => {
   //console.log("s d", s, d, from, to, dict);
   printAllPaths(s, d, dict);
   //console.log("resultData", resultData);
-  res.send(resultData);
+  res.send({
+    success: true,
+    message: "Success Data",
+    code: 200,
+    data: [...resultData],
+  });
 });
 
 module.exports = router;

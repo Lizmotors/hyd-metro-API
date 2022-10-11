@@ -625,7 +625,12 @@ function findDistance(distanceData) {
     }
   }
 
-  return { distance: distance + " kms", time: time + " secs" };
+  return {
+    miles: distance,
+    time_for_journey: time + " secs",
+    tokens_earned: Math.round(distance / 4),
+    co2_saved: Math.round(distance / 4),
+  };
 }
 
 function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
@@ -669,6 +674,7 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
         ...timeData,
         lines: [...new Set(lines)],
         totalStations: formatData.length,
+        token: "token",
       });
       //resultData = [...localData];
     }
@@ -743,9 +749,19 @@ router.get("/:from/:to", (req, res) => {
   printAllPaths(s, d, dict);
   //console.log("resultData", resultData);
   if (resultData.length > 0) {
-    res.send(resultData[0]);
+    res.send({
+      success: true,
+      message: "Success Data",
+      code: 200,
+      data: { ...resultData[0] },
+    });
   } else {
-    res.send(resultData);
+    res.send({
+      success: true,
+      message: "Success Data",
+      code: 200,
+      data: [...resultData],
+    });
   }
 });
 
