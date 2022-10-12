@@ -8,7 +8,7 @@ const allRoutes = require("./controllers/allRoute");
 const port = process.env.PORT || 8000;
 
 app.use("/route", route);
-app.use("/allstations", allstations);
+app.use("/search/allstations", allstations);
 app.use("/allroutes", allRoutes);
 
 app.listen(port, () => {

@@ -5,8 +5,13 @@ const stations = require("../station.json");
 
 router.get("/", (req, res) => {
   res.status(200).json({
-    stations: stations,
-    len: stations.length,
+    success: true,
+    message: "Success Data",
+    code: 200,
+    data: {
+      stations: stations,
+      total_stations: stations.length,
+    },
   });
 });
 
