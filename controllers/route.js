@@ -497,8 +497,8 @@ let links = [
   ["Dilsukhnagar", "Musarambagh", 1.5, 120],
   ["Musarambagh", "New Market", 1, 60],
   ["New Market", "Malakpet", 1.1, 120],
-  ["Malakpet", "M G Bus station", 1, 120],
-  ["M G Bus station", "Osmania Medical College", 0.6, 120],
+  ["Malakpet", "M G Bus Station", 1, 120],
+  ["M G Bus Station", "Osmania Medical College", 0.6, 120],
   ["Osmania Medical College", "Gandhi Bhavan", 1, 60],
   ["Gandhi Bhavan", "Nampally", 0.8, 120],
   ["Nampally", "Assembly", 0.7, 60],
@@ -523,8 +523,8 @@ let links = [
   ["Musarambagh", "Dilsukhnagar", 1.5, 120],
   ["New Market", "Musarambagh", 1, 60],
   ["Malakpet", "New Market", 1.1, 120],
-  ["M G Bus station", "Malakpet", 1, 120],
-  ["Osmania Medical College", "M G Bus station", 0.6, 120],
+  ["M G Bus Station", "Malakpet", 1, 120],
+  ["Osmania Medical College", "M G Bus Station", 0.6, 120],
   ["Gandhi Bhavan", "Osmania Medical College", 1, 60],
   ["Nampally", "Gandhi Bhavan", 0.8, 120],
   ["Assembly", "Nampally", 0.7, 60],
@@ -551,7 +551,7 @@ let links = [
   ["RTC Cross Roads", "Chikkadpally", 0.8, 60],
   ["Chikkadpally", "Narayanguda", 0.9, 120],
   ["Narayanguda", "Sultan Bazar", 1.3, 120],
-  ["Sultan Bazar", "M G Bus station", 0.7, 60],
+  ["Sultan Bazar", "M G Bus Station", 0.7, 60],
   ["Parade Grounds", "JBS", 1, 120],
   ["Secunderabad West", "Parade Grounds", 1, 120],
   ["Gandhi Hospital", "Secunderabad West", 1.3, 180],
@@ -560,7 +560,7 @@ let links = [
   ["Chikkadpally", "RTC Cross Roads", 0.8, 60],
   ["Narayanguda", "Chikkadpally", 0.9, 120],
   ["Sultan Bazar", "Narayanguda", 1.3, 120],
-  ["M G Bus station", "Sultan Bazar", 0.7, 60],
+  ["M G Bus Station", "Sultan Bazar", 0.7, 60],
 ];
 
 const stations = require("../station.json");
@@ -636,6 +636,7 @@ function findDistance(distanceData) {
 function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
   if (u == d) {
     let localData = [];
+    //console.log("local list length", localPathList.length);
     for (let t = 0; t < localPathList.length; t++) {
       const data = localPathList[t];
       const keyData = Object.keys(dict).find((key) => dict[key] === data);
@@ -646,7 +647,7 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
     const timeData = findDistance([...localData]);
 
     const formatData = localData.map((ele) => {
-      const findData = stations.find((item) => item.station_name === ele);
+      const findData = stations.find((item) => item.name === ele);
       //console.log("findData", findData, ele);
       return { ...findData };
     });
@@ -658,8 +659,11 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
     //   totalStations: formatData.length,
     // });
 
+    //console.log("result data", resultData.length);
+
     if (resultData.length > 0) {
-      if (localData.length < resultData.length) {
+      if (formatData.length < resultData[0].totalStations) {
+        resultData = [];
         resultData.push({
           [`stations`]: [...formatData],
           ...timeData,
@@ -747,6 +751,7 @@ router.get("/:from/:to", (req, res) => {
   resultData = [];
   //console.log("s d", s, d, from, to, dict);
   printAllPaths(s, d, dict);
+  console.log(resultData);
   //console.log("resultData", resultData);
   if (resultData.length > 0) {
     res.send({

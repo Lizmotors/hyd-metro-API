@@ -1,7 +1,7 @@
 [
     {
       "id": "HRM1",
-      "station_name": "L B Nagar",
+      "name": "L B Nagar",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.35026677,
@@ -10,7 +10,7 @@
     },
     {
       "id": "HRM2",
-      "station_name": "Victoria Memorial",
+      "name": "Victoria Memorial",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.36193211,
@@ -19,7 +19,7 @@
     },
     {
       "id": "HRM3",
-      "station_name": "Chaitanyapuri",
+      "name": "Chaitanyapuri",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.36835912,
@@ -28,7 +28,7 @@
     },
     {
       "id": "HRM4",
-      "station_name": "Dilsukhnagar",
+      "name": "Dilsukhnagar",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.36856688,
@@ -37,7 +37,7 @@
     },
     {
       "id": "HRM5",
-      "station_name": "Musarambagh",
+      "name": "Musarambagh",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.37107432,
@@ -46,7 +46,7 @@
     },
     {
       "id": "HRM6",
-      "station_name": "New Market",
+      "name": "New Market",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.37354054,
@@ -55,7 +55,7 @@
     },
     {
       "id": "HRM7",
-      "station_name": "Malakpet",
+      "name": "Malakpet",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.37730367,
@@ -64,7 +64,7 @@
     },
     {
       "id": "HRM8",
-      "station_name": "MG Bus station",
+      "name": "M G Bus Station",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.37987391,
@@ -73,7 +73,7 @@
     },
     {
       "id": "HRM9",
-      "station_name": "Osmania Medical College",
+      "name": "Osmania Medical College",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.38233548,
@@ -82,7 +82,7 @@
     },
     {
       "id": "HRM10",
-      "station_name": "Gandhi Bhavan",
+      "name": "Gandhi Bhavan",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.38608893,
@@ -91,7 +91,7 @@
     },
     {
       "id": "HRM11",
-      "station_name": "Nampally",
+      "name": "Nampally",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.39185266,
@@ -100,7 +100,7 @@
     },
     {
       "id": "HRM12",
-      "station_name": "Assembly",
+      "name": "Assembly",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.39809876,
@@ -109,7 +109,7 @@
     },
     {
       "id": "HRM13",
-      "station_name": "Lakdikapul",
+      "name": "Lakdikapul",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.40393917,
@@ -118,7 +118,7 @@
     },
     {
       "id": "HRM14",
-      "station_name": "Khairatabad",
+      "name": "Khairatabad",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.41160467,
@@ -127,7 +127,7 @@
     },
     {
       "id": "HRM15",
-      "station_name": "Irrum Manzil",
+      "name": "Irrum Manzil",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.42050873,
@@ -136,7 +136,7 @@
     },
     {
       "id": "HRM16",
-      "station_name": "Punjagutta",
+      "name": "Punjagutta",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.42891614,
@@ -145,7 +145,7 @@
     },
     {
       "id": "HRM17",
-      "station_name": "Ameerpet",
+      "name": "Ameerpet",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.43570427,
@@ -154,7 +154,7 @@
     },
     {
       "id": "HRM18",
-      "station_name": "S R Nagar",
+      "name": "S R Nagar",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.44164868,
@@ -163,7 +163,7 @@
     },
     {
       "id": "HRM19",
-      "station_name": "ESI Hospital",
+      "name": "ESI Hospital",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.44737026,
@@ -172,7 +172,7 @@
     },
     {
       "id": "HRM20",
-      "station_name": "Erragadda Road",
+      "name": "Erragadda Road",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.45722337,
@@ -181,7 +181,7 @@
     },
     {
       "id": "HRM21",
-      "station_name": "Bharat Nagar",
+      "name": "Bharat Nagar",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.4640518,
@@ -190,7 +190,7 @@
     },
     {
       "id": "HRM22",
-      "station_name": "Moosapet",
+      "name": "Moosapet",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.47206278,
@@ -199,7 +199,7 @@
     },
     {
       "id": "HRM23",
-      "station_name": "Balanagar",
+      "name": "Balanagar",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.47683185,
@@ -208,7 +208,7 @@
     },
     {
       "id": "HRM24",
-      "station_name": "Kukatpally",
+      "name": "Kukatpally",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.48511645,
@@ -217,7 +217,7 @@
     },
     {
       "id": "HRM25",
-      "station_name": "KPHB Colony",
+      "name": "KPHB Colony",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.49357144,
@@ -226,7 +226,7 @@
     },
     {
       "id": "HRM26",
-      "station_name": "JNTU College",
+      "name": "JNTU College",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.49870034,
@@ -235,7 +235,7 @@
     },
     {
       "id": "HRM27",
-      "station_name": "Miyapur",
+      "name": "Miyapur",
       "line": "red",
       "layout": "elevated",
       "station_latitude": 17.49646106,
@@ -244,7 +244,7 @@
     },
     {
       "id": "HBM1",
-      "station_name": "Nagole",
+      "name": "Nagole",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.39086326,
@@ -253,7 +253,7 @@
     },
     {
       "id": "HBM2",
-      "station_name": "Uppal",
+      "name": "Uppal",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.4002416,
@@ -262,7 +262,7 @@
     },
     {
       "id": "HBM3",
-      "station_name": "Stadium",
+      "name": "Stadium",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.40740633,
@@ -271,7 +271,7 @@
     },
     {
       "id": "HBM4",
-      "station_name": "NGRI",
+      "name": "NGRI",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.41471014,
@@ -280,7 +280,7 @@
     },
     {
       "id": "HBM5",
-      "station_name": "Habsiguda",
+      "name": "Habsiguda",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.42021528,
@@ -289,7 +289,7 @@
     },
     {
       "id": "HBM6",
-      "station_name": "Tarnaka",
+      "name": "Tarnaka",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.42830263,
@@ -298,7 +298,7 @@
     },
     {
       "id": "HBM7",
-      "station_name": "Mettuguda",
+      "name": "Mettuguda",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43546831,
@@ -307,7 +307,7 @@
     },
     {
       "id": "HBM8",
-      "station_name": "Secunderabad East",
+      "name": "Secunderabad East",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43619246,
@@ -316,7 +316,7 @@
     },
     {
       "id": "HBM9",
-      "station_name": "Parade Grounds",
+      "name": "Parade Grounds",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44312125,
@@ -325,7 +325,7 @@
     },
     {
       "id": "HBM10",
-      "station_name": "Paradise",
+      "name": "Paradise",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44348224,
@@ -334,7 +334,7 @@
     },
     {
       "id": "HBM11",
-      "station_name": "Rasool Pura",
+      "name": "Rasool Pura",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44359458,
@@ -343,7 +343,7 @@
     },
     {
       "id": "HBM12",
-      "station_name": "Prakash Nagar",
+      "name": "Prakash Nagar",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44494504,
@@ -352,7 +352,7 @@
     },
     {
       "id": "HBM13",
-      "station_name": "Begumpet",
+      "name": "Begumpet",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.4375748,
@@ -361,7 +361,7 @@
     },
     {
       "id": "HBM14",
-      "station_name": "Ameerpet",
+      "name": "Ameerpet",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43577643,
@@ -370,7 +370,7 @@
     },
     {
       "id": "HBM15",
-      "station_name": "Madhura Nagar",
+      "name": "Madhura Nagar",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.4368957,
@@ -379,7 +379,7 @@
     },
     {
       "id": "HBM16",
-      "station_name": "Yusuf Guda",
+      "name": "Yusuf Guda",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43565647,
@@ -388,7 +388,7 @@
     },
     {
       "id": "HBM17",
-      "station_name": "Jubilee Hills Road No 5",
+      "name": "Jubilee Hills Road No 5",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43031585,
@@ -397,7 +397,7 @@
     },
     {
       "id": "HBM18",
-      "station_name": "Jubilee Hills Check Post",
+      "name": "Jubilee Hills Check Post",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.42825044,
@@ -406,7 +406,7 @@
     },
     {
       "id": "HBM19",
-      "station_name": "Pedamma Temple",
+      "name": "Pedamma Temple",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43050082,
@@ -415,7 +415,7 @@
     },
     {
       "id": "HBM20",
-      "station_name": "Madhapur",
+      "name": "Madhapur",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.43678773,
@@ -424,7 +424,7 @@
     },
     {
       "id": "HBM21",
-      "station_name": "Durgam Chervu",
+      "name": "Durgam Chervu",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44287749,
@@ -433,7 +433,7 @@
     },
     {
       "id": "HBM22",
-      "station_name": "HITEC City",
+      "name": "HITEC City",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.4489237,
@@ -442,7 +442,7 @@
     },
     {
       "id": "HBM23",
-      "station_name": "Raidurg",
+      "name": "Raidurg",
       "line": "blue",
       "layout": "elevated",
       "station_latitude": 17.44195976,
@@ -451,7 +451,7 @@
     },
     {
       "id": "HGM1",
-      "station_name": "JBS",
+      "name": "JBS",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.44445944,
@@ -460,7 +460,7 @@
     },
     {
       "id": "HGM2",
-      "station_name": "Parade Grounds",
+      "name": "Parade Grounds",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.44314549,
@@ -469,7 +469,7 @@
     },
     {
       "id": "HGM3",
-      "station_name": "Secunderabad West",
+      "name": "Secunderabad West",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.43371525,
@@ -478,7 +478,7 @@
     },
     {
       "id": "HGM4",
-      "station_name": "Gandhi Hospital",
+      "name": "Gandhi Hospital",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.4255943,
@@ -487,7 +487,7 @@
     },
     {
       "id": "HGM5",
-      "station_name": "Musheerabad",
+      "name": "Musheerabad",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.41781399,
@@ -496,7 +496,7 @@
     },
     {
       "id": "HGM6",
-      "station_name": "RTC Cross Roads",
+      "name": "RTC Cross Roads",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.40766316,
@@ -505,7 +505,7 @@
     },
     {
       "id": "HGM7",
-      "station_name": "Chikkadpally",
+      "name": "Chikkadpally",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.40077328,
@@ -514,7 +514,7 @@
     },
     {
       "id": "HGM8",
-      "station_name": "Narayanguda",
+      "name": "Narayanguda",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.39422753,
@@ -523,7 +523,7 @@
     },
     {
       "id": "HGM9",
-      "station_name": "Sultan Bazar",
+      "name": "Sultan Bazar",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.38417328,
@@ -532,7 +532,7 @@
     },
     {
       "id": "HGM10",
-      "station_name": "M G Bus Station",
+      "name": "M G Bus Station",
       "line": "green",
       "layout": "elevated",
       "station_latitude": 17.37999562,

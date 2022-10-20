@@ -208,7 +208,7 @@ function printAllPathsUtil(u, d, isVisited, localPathList, dict) {
     const timeData = findDistance([...localData]);
 
     const formatData = localData.map((ele) => {
-      const findData = stations.find((item) => item.station_name === ele);
+      const findData = stations.find((item) => item.name === ele);
       //console.log("findData", findData, ele);
       return { ...findData };
     });
